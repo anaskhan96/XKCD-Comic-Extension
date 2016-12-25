@@ -12,4 +12,4 @@ the website, while staying on the same Chrome tab.
 * Clone this repository to your local directory
 * Open Chrome Web Browser and type *chrome://extensions* in the address bar
 * Tick the *Developer mode* checkbox on the page
-* Choose the *Load unpacked extension...* option, naviagate to this repository and select the *extension* folder
+* Choose the *Load unpacked extension...* option, naviagate to and select this repository
