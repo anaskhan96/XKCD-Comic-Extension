@@ -1,0 +1,65 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>xkcd</title>
+    <style type="text/css">
+    	body{
+    		background-color: gainsboro;
+    	}
+    	#status{
+    		padding: 10px;
+    		text-align: center;
+    	}
+      button {
+    background-color: white;
+    border: 2px solid grey;
+    color: grey;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+}
+    button:hover{
+      background-color: grey;
+      color: white;
+    }
+    p{
+      color: black;
+      font-family: Verdana;
+      font-size: 20px;
+    }
+    a{
+      font-family: Verdana;
+      font-size: 13px;
+    }
+    a:hover{
+      color: red;
+    }
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+     <script src="jQuery.js"></script>
+  </head>
+  <body>
+    <div id="status">
+    <button id="latest">Latest</button>
+    <button id="random">Random</button><br>
+    <div id="comic"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
