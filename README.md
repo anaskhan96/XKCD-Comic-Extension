@@ -9,7 +9,9 @@ the website, while staying on the same Chrome tab.
 * Javascript (*AJAX*, *JSON*)
 
 ###Steps to load the extension
-* Clone this repository to your local directory
+* Clone this repository to your local directory using the command :
+
+  `git clone https://github.com/anaskhan96/XKCD-Comic-Extension.git`
 * Open Chrome Web Browser and type *chrome://extensions* in the address bar
 * Tick the *Developer mode* checkbox on the page
-* Choose the *Load unpacked extension...* option, naviagate to and select this repository
+* Choose the *Load unpacked extension...* option, naviagate to and select the local cloned repository
