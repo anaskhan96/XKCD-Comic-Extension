@@ -30,10 +30,11 @@ function fetch(n){
 }
 function display(e){
     if(e.target.id=="latest")
-        fetch("");
+        fetch(""); // fetching the latest comic
     else
-        fetch(Math.floor(Math.random()*lastNum)+1);
+        fetch(Math.floor(Math.random()*lastNum)+1); // fetching any random comic
 }
+
 //To allow the extension to open any particular url in a new tab
 $(document).ready(function(){
    $('body').on('click', 'a', function(){
@@ -46,7 +47,7 @@ data={};
 var latestButton=document.getElementById("latest");
 var randomButton=document.getElementById("random");
 
-fetch(""); //fetching the latest comic
+fetch(""); //fetching the latest comic on first run
 
 latestButton.addEventListener("click",display,false);
 randomButton.addEventListener("click",display,false);
