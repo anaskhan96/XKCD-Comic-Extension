@@ -8,7 +8,7 @@ the website, while staying on the same Chrome tab.
 * HTML, CSS
 * Javascript (*AJAX*, *JSON*)
 
-###Steps to load the extension
+### Steps to load the extension
 * Clone this repository to your local directory using the command :
 
   `git clone https://github.com/anaskhan96/XKCD-Comic-Extension.git`
