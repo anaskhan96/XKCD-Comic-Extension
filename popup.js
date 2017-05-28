@@ -24,7 +24,11 @@ function fetch(n) {
             comicDiv.appendChild(comicLink);
         },
         error: function (error) {
-            console.log("Sorry! An error occurred. Please check the console log for details.");
+            console.log(error);
+            comicDiv = document.getElementById("comic");
+            errorMessage = document.createElement("p");
+            errorMessage.innerHTML = "An error occurred while fetching the comic. Please checks the logs for details.";
+            comicDiv.appendChild(errorMessage);
         }
     });
 }
